@@ -48,13 +48,12 @@ We explore:
 
 ## 2. Repository Structure
 
-```text
 .
 ├── README.md                     # This file
 ├── reports/
 │   ├── HPML_Project_Proposal.pdf
 │   ├── HPML_Midpoint_Report.pdf
-│   └── HPML_Final_Project.pdf
+│   └── HPML_Final_Project.pdf    # Final Report
 ├── scripts/
 │   ├── measure_vram_qa.py        # Single-step VRAM measurement (A3, C1, C2)
 │   └── aggregate_results.ipynb   # Optional notebook to build plots/tables
