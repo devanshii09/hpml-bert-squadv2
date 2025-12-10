@@ -72,7 +72,6 @@ We explore:
         ├── run_qa_c1.py                  # C1: 8-bit optimizer + compile
         ├── run_qa_c2.py                  # C2: grad checkpointing + compile
         ├── run_qa_d1.py                  # D1: AOT-eager backend
-        └── configs/                      # (optional) JSON/YAML configs per run
 
 If your filenames differ slightly (e.g., run_qa_b3_freeze.py vs run_qa_b3_freeze_layers_t4.py), just update the tree accordingly before committing.
 
