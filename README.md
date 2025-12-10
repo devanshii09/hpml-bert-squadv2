@@ -117,14 +117,14 @@ All commands assume:
 
 3.1 Environment Setup (example)
 
-# create env
+**create env**
 conda create -n hpml_bert python=3.9 -y
 conda activate hpml_bert
 
-# install PyTorch + CUDA (version may differ on your cluster)
+**install PyTorch + CUDA (version may differ on your cluster)**
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
-# install Transformers and datasets extras
+**install Transformers and datasets extras**
 pip install -e .[torch,sentencepiece,vision]
 pip install datasets evaluate accelerate bitsandbytes
 
