@@ -108,7 +108,7 @@ To reproduce all results, it is sufficient to:
 2. Run any of the `run_qa_*.py` scripts with `--dataset_name squad_v2 --version_2_with_negative`.
 The dataset will be fetched automatically from the Hugging Face Hub.
 
-3. How to Run the Experiments
+## 3. How to Run the Experiments
 
 All commands assume:
 	•	You are inside the transformers repo root on the cluster.
@@ -314,7 +314,7 @@ VRAM (single-step peak allocated):
 
 ⸻
 
-5. Observations
+## 4. Observations
 	•	System optimizations pay off: SDPA + torch.compile + bucketing (A4-nb) yields ~17% higher throughput vs baseline with slightly better F1.
 	•	LoRA + BitFit underperform on SQuAD v2 in our setting: faster, but significantly worse F1 → extractive QA seems to need more capacity / deeper updates.
 	•	8-bit optimizers and gradient checkpointing are effective VRAM levers:
@@ -324,7 +324,7 @@ VRAM (single-step peak allocated):
 
 ⸻
 
-6. How to Reproduce Our Tables and Plots
+## 5. How to Reproduce Our Tables and Plots
 	1.	Run the desired run_qa_*.py scripts to populate the bert-base-squadv2-* directories.
 	2.	Collect training_args.bin and eval_results.json for each run.
 	3.	Use scripts/aggregate_results.ipynb to:
@@ -334,7 +334,7 @@ VRAM (single-step peak allocated):
 
 ⸻
 
-7. License / Acknowledgements
+## 6. License / Acknowledgements
 	•	Built on top of the Hugging Face Transformers￼ library.
 	•	SQuAD v2 dataset via Hugging Face Datasets￼.
 	•	Project for HPML (High Performance Machine Learning) course.
