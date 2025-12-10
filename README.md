@@ -14,32 +14,32 @@ We explore:
 
 ## 1. Project Milestones and Status
 
-- ✅ **Baseline BERT on SQuAD v2 (A1)**  
+- **Baseline BERT on SQuAD v2 (A1)**  
   - fp16, AdamW, batch size 8, no SDPA, no `torch.compile`.  
   - Establish dev F1, runtime, throughput on a T4.
 
-- ✅ **System optimizations (A-series)**  
+- **System optimizations (A-series)**  
   - **A2**: +SDPA attention.  
   - **A3**: A2 + `torch.compile` (inductor).  
   - **A4-nb**: A3 + dynamic bucketing / pad-max (no bug).  
   - **A4-b**: buggy bucketing variant that catastrophically breaks accuracy; kept as a negative ablation.
 
-- ✅ **Parameter-efficient finetuning (B-series)**  
+- **Parameter-efficient finetuning (B-series)**  
   - **B1**: LoRA + `torch.compile`.  
   - **B2**: BitFit-style bias-only finetuning.  
   - **B3**: Encoder layer freezing.  
   - Compare speed vs accuracy vs full finetuning.
 
-- ✅ **Memory-oriented configs (C-series, D1)**  
+- **Memory-oriented configs (C-series, D1)**  
   - **C1**: 8-bit optimizer (AdamW 8-bit) + `torch.compile`.  
   - **C2**: Full-precision optimizer + **gradient checkpointing** + `torch.compile`.  
   - **D1**: AOT-eager backend vs inductor.
 
-- ✅ **VRAM profiling (A3 vs C1 vs C2)**  
+- **VRAM profiling (A3 vs C1 vs C2)**  
   - `torch.cuda.max_memory_allocated()` / `max_memory_reserved()` on a representative step.  
   - Derive “T4 VRAM recipes” from these numbers.
 
-- ✅ **Reports & slides**  
+- **Reports & slides**  
   - `HPML_Project_Proposal.pdf`  
   - `HPML_Midpoint_Report.pdf`  
   - `HPML_Final_Project.pdf` + final presentation slides.
