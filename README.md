@@ -48,6 +48,7 @@ We explore:
 
 ## 2. Repository Structure
 
+```text
 .
 ├── README.md                     # This file
 ├── reports/
@@ -71,9 +72,7 @@ We explore:
         ├── run_qa_c1.py                  # C1: 8-bit optimizer + compile
         ├── run_qa_c2.py                  # C2: grad checkpointing + compile
         ├── run_qa_d1.py                  # D1: AOT-eager backend
-
-If your filenames differ slightly (e.g., run_qa_b3_freeze.py vs run_qa_b3_freeze_layers_t4.py), just update the tree accordingly before committing.
-
+``` 
 
 - **Dataset:** [SQuAD v2](https://huggingface.co/datasets/squad_v2) (Stanford Question Answering Dataset v2.0).
 - **Access method:** We use the Hugging Face `datasets` library:
