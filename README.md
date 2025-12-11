@@ -296,6 +296,7 @@ This prints peak allocated / reserved VRAM for each config.
 ## Key Results (Short Summary)
 
 Throughput & Accuracy (SQuAD v2 dev):
+
 	•	Baseline A1: ~43.9 samples/s, F1 ≈ 76.6
 	•	A3 (SDPA + compile): ~45.3 samples/s, F1 ≈ 76.9
 	•	A4-nb (bucketing): ~51.6 samples/s, F1 ≈ 77.2
@@ -306,6 +307,7 @@ Throughput & Accuracy (SQuAD v2 dev):
 	•	D1 (AOT-eager): ~45.5 samples/s, F1 ≈ 76.4
 
 VRAM (single-step peak allocated):
+
 	•	A3: ~3087 MiB
 	•	C1: ~2466 MiB  (≈ 20% less than A3)
 	•	C2: ~2100 MiB  (≈ 32% less than A3)
