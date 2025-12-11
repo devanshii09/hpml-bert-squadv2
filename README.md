@@ -293,7 +293,7 @@ This prints peak allocated / reserved VRAM for each config.
 
 ⸻
 
-4. Key Results (Short Summary)
+## Key Results (Short Summary)
 
 Throughput & Accuracy (SQuAD v2 dev):
 	•	Baseline A1: ~43.9 samples/s, F1 ≈ 76.6
